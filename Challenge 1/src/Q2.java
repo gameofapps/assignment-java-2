@@ -12,10 +12,3 @@ public class Q2 {
 	}
 	
 }
-
-/*	initial idea was to create two arraylists using for-loops; 
- *	one composed of initial string characters and another of it reversed using collections.reverse(<List>);
- *	then I would compare the two arraylists to each other to check if they matched
- *	realized that I could just use <array>.toCharArray(); instead of for-loops, but only for arrays
- *	no convenient way to reverse arrays, so I just checked the inital and ending characters manually
- */
