@@ -1,10 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Set;
-
-import javax.swing.Spring;
 
 public class Q1 {
 	
