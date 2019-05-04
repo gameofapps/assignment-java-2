@@ -50,7 +50,7 @@ public class TitleScreen {
         if (infoButtonClicked) {
             //formating and positioning
             textOffset = lerp(textOffset, -width / 2, 0.2);
-            fill(0, -textOffset);
+            fill(0, -textOffset * 2);
             textSize(width / 15);
 
             //text
