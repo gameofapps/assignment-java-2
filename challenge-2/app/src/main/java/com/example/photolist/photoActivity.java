@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class photoActivity extends AppCompatActivity {
     ImageView img;
-    TextView textView;
+    TextView name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,9 @@ public class photoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_photo);
 
         img = findViewById(R.id.image);
-        textView = findViewById(R.id.textView);
+        name = findViewById(R.id.name);
         Intent intent = getIntent();
         img.setImageResource(intent.getIntExtra("img", 0));
-        textView.setText(intent.getStringExtra("name"));
+        name.setText(intent.getStringExtra("name"));
     }
 }

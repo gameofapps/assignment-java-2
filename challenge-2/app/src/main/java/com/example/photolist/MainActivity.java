@@ -49,23 +49,23 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Object getItem(int position) {
-            return null;
+            return names[position];
         }
 
         @Override
         public long getItemId(int position) {
-            return 0;
+            return images[position];
         }
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             convertView = getLayoutInflater().inflate(R.layout.listlayout, null);
 
-            ImageView imageView = (ImageView)convertView.findViewById(R.id.image);
-            TextView textView = (TextView) convertView.findViewById(R.id.textView);
+            ImageView image = (ImageView)convertView.findViewById(R.id.image);
+            TextView name = (TextView) convertView.findViewById(R.id.name);
 
-            imageView.setImageResource(images[position]);
-            textView.setText(names[position]);
+            image.setImageResource(images[position]);
+            name.setText(names[position]);
 
             return convertView;
         }
