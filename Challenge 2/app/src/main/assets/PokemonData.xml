@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PokemonList>
+<list>
+    <Pokemon>
+        <name>Bulbasaur</name>
+        <index>1</index>
+        <imgUrl>001Bulbasaur</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Charmander</name>
+        <index>4</index>
+        <imgUrl>004Charmander</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Squirtle</name>
+        <index>7</index>
+        <imgUrl>007Squirtle</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Pikachu</name>
+        <index>25</index>
+        <imgUrl>025Pikachu</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Psyduck</name>
+        <index>54</index>
+        <imgUrl>054Psyduck</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Eevee</name>
+        <index>133</index>
+        <imgUrl>133Eevee</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Snorlax</name>
+        <index>143</index>
+        <imgUrl>143Snorlax</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Mewtwo</name>
+        <index>150</index>
+        <imgUrl>150Mewtwo</imgUrl>
+    </Pokemon>
+    <Pokemon>
+        <name>Mew</name>
+        <index>151</index>
+        <imgUrl>151Mew</imgUrl>
+    </Pokemon>
+</list>
+</PokemonList>
