@@ -2,6 +2,9 @@ package com.sleepyjune.galleryapp.pokemon;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +19,7 @@ import com.sleepyjune.galleryapp.ItemDetailFragment;
 import com.sleepyjune.galleryapp.ItemListActivity;
 import com.sleepyjune.galleryapp.R;
 
+import java.io.InputStream;
 import java.util.List;
 
 public class PokemonListAdapter extends RecyclerView.Adapter<PokemonListAdapter.ViewHolder> {
@@ -62,10 +66,18 @@ public class PokemonListAdapter extends RecyclerView.Adapter<PokemonListAdapter.
 
     @Override
     public void onBindViewHolder(final PokemonListAdapter.ViewHolder holder, int position) {
-        holder.mIdView.setText(String.valueOf(mValues.get(position).index));
-        holder.mContentView.setText(mValues.get(position).name);
+        Pokemon pokemon = mValues.get(position);
+
+        holder.mIdView.setText(String.valueOf(pokemon.index));
+        holder.mContentView.setText(pokemon.name);
 
         //holder.mImageView.setImageResource(R.drawable.test_pikachu);
+
+        if(pokemon.bitmap != null){
+            holder.mImageView.setImageBitmap(pokemon.bitmap);
+        }else{
+            holder.mImageView.setImageResource(R.drawable.default_pokemon);
+        }
 
         holder.itemView.setTag(mValues.get(position));
         holder.itemView.setOnClickListener(mOnClickListener);

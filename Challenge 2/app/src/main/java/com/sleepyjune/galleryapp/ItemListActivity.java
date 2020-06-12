@@ -2,6 +2,9 @@ package com.sleepyjune.galleryapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.nfc.Tag;
 import android.os.Bundle;
 
@@ -13,35 +16,15 @@ import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import com.sleepyjune.galleryapp.dummy.DummyContent;
 import com.sleepyjune.galleryapp.pokemon.Pokemon;
 import com.sleepyjune.galleryapp.pokemon.PokemonList;
 import com.sleepyjune.galleryapp.pokemon.PokemonListAdapter;
-
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
-import java.io.File;
-
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
 
-/**
- * An activity representing a list of Items. This activity
- * has different presentations for handset and tablet-size devices. On
- * handsets, the activity presents a list of items, which when touched,
- * lead to a {@link ItemDetailActivity} representing
- * item details. On tablets, the activity presents the list of items and
- * item details side-by-side using two vertical panes.
- */
+
 public class ItemListActivity extends AppCompatActivity {
 
     /**
@@ -63,6 +46,7 @@ public class ItemListActivity extends AppCompatActivity {
 //        pokemonArrayList.add(pikachu);
 
         DeserializeXMLData();
+        LoadBitmaps(getAssets());
 
 
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -83,7 +67,6 @@ public class ItemListActivity extends AppCompatActivity {
     }
 
     private void DeserializeXMLData(){
-
         PokemonList pokemonList = null;
 
         try
@@ -94,12 +77,25 @@ public class ItemListActivity extends AppCompatActivity {
             pokemonList = serializer.read(PokemonList.class, inputStream);
 
             PokemonList.InitializePokemonMap(pokemonList);
-
-            Log.d("sometag","blah"+pokemonList.list.size());
         }
         catch (Exception e)
         {
             e.printStackTrace();
+        }
+    }
+
+    private void LoadBitmaps(AssetManager assets){
+        for(int i=0;i<PokemonList.pokemons.size();i++){
+            Pokemon pokemon = PokemonList.pokemons.get(i);
+
+            try{
+                InputStream is = assets.open("images/" + pokemon.imgUrl + ".png");
+                pokemon.bitmap = BitmapFactory.decodeStream(is);
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 

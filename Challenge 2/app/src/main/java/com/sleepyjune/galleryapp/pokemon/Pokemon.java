@@ -1,5 +1,7 @@
 package com.sleepyjune.galleryapp.pokemon;
 
+import android.graphics.Bitmap;
+
 import org.simpleframework.xml.Root;
 import org.simpleframework.xml.Element;
 
@@ -11,6 +13,8 @@ public class Pokemon {
     public int index;
     @Element
     public String imgUrl;
+
+    public Bitmap bitmap;
 
     public Pokemon(){
 
