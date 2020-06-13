@@ -1,0 +1,2 @@
+rootProject.name='GoaChallenge2'
+include ':app'

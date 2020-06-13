@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GoaChallenge2</string>
+
+    <string-array name="image_name">
+        <item>Nature1</item>
+        <item>Nature2</item>
+        <item>Nature3</item>
+        <item>Nature4</item>
+        <item>Nature5</item>
+        <item>Nature6</item>
+        <item>Nature7</item>
+        <item>Nature8</item>
+        <item>Nature9</item>
+        <item>Nature10</item>
+    </string-array>
+    
+    <string-array name="image_description">
+        <item>Nature Picture 1</item>
+        <item>Nature Picture 2</item>
+        <item>Nature Picture 3</item>
+        <item>Nature Picture 4</item>
+        <item>Nature Picture 5</item>
+        <item>Nature Picture 6</item>
+        <item>Nature Picture 7</item>
+        <item>Nature Picture 8</item>
+        <item>Nature Picture 9</item>
+        <item>Nature Picture 10</item>
+    </string-array>
+</resources>
