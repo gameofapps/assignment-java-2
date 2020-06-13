@@ -37,6 +37,27 @@ void findPairs(int[] testArray, int targetSum) {
   // your code here
 }
 ```
+Here's the answer:
+```java
+class Main {
+  public static void main(String[] args){
+    int[] testArray = {2, 4, 5, 1, 3, 5, 4};
+    int targetSum = 6; 
+    findPairs(testArray, targetSum);
+  }
+  
+  static void findPairs(int[] testArray, int targetSum) {
+    for(int i = 0; i < testArray.length; i++) {
+      //looping through every number that isn't i to see if there are any sums that equal 6
+      for(int j = i + 1; j < testArray.length; j++){
+        if((testArray[i] + testArray[j]) == targetSum){
+          System.out.println("(" + testArray[i] + ", " + testArray[j] + ")");
+        } 
+      }      
+    } 
+  }
+}
+```
 
 ### Question 2: Is Palindrome?
 
