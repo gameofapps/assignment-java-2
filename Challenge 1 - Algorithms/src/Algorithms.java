@@ -4,12 +4,14 @@ import java.util.*;
 
 public class Algorithms {
 	
-	public static void findPairs(int[] testArray, int targetSum) {
+	public static String[] FindPairs(int[] testArray, int targetSum) {
 		
 		//Arrays.sort(testArray);
 		
 		Map<Integer, Integer> testArrayMap = new HashMap<Integer, Integer>();
 		Set<Integer> outputSet = new HashSet<Integer>();
+		
+		ArrayList<String> outputs = new ArrayList<String>();
 		
 		for(int i=0;i<testArray.length;i++) {
 			
@@ -38,13 +40,20 @@ public class Algorithms {
 				Integer max = Math.max(num, difference);
 				
 				if(!outputSet.contains(min)) { //test if already outputed pair
-					System.out.println("(" + min + ", " + max + ")");		
+					String output = "(" + min + ", " + max + ")";
 					
+					System.out.println(output);		
+					
+					outputs.add(output);
 					outputSet.add(min);
 				}				
 			}
 		}
 		
+		String[] outputsArray = new String[outputs.size()];
+		outputsArray = outputs.toArray(outputsArray);	
+		
+		return outputsArray;		
 	}
 	
 	public static boolean isPalindrome(String testString) {
@@ -57,8 +66,12 @@ public class Algorithms {
 		int mid = Math.floorDiv(length, 2);
 		
 		for(int i=0;i<mid;i++) {
-			char front = testString.charAt(i);
-			char back = testString.charAt(length-i-1);
+			char front = Character.toLowerCase(testString.charAt(i));
+			char back = Character.toLowerCase(testString.charAt(length-i-1));
+			
+			if(!Character.isLetter(front)) {
+				return false;//bad input
+			}
 			
 			if(front != back) {
 				return false;
@@ -75,7 +88,7 @@ public class Algorithms {
 		// (2, 4)
 		// (1, 5)
 
-		findPairs(testArray, targetSum);
+		FindPairs(testArray, targetSum);
 		
 		System.out.println(isPalindrome("radar"));
 		System.out.println(isPalindrome("bob"));
