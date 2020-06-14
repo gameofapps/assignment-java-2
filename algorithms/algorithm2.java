@@ -22,18 +22,13 @@ class algorithm2 {
     for(int x = 0; x < length/2; x++){
       // lowercase the word, and compare first letter with last letter, second letter with second last letter, etc.
       if (testString.toLowerCase().charAt(x) != testString.toLowerCase().charAt(length-x-1)){
-      System.out.print("No, " + "'" + testString + "'" + " is not a palindrome :(");
+        System.out.print("No, " + "'" + testString + "'" + " is not a palindrome :(\n");
 
-      return false;
+        return false;
       }
-      }
+    }
+    System.out.print("Yes, " + "'" + testString + "'" + " is a palindrome!\n");
 
-      System.out.print("Yes, " + "'" + testString + "'" + " is a palindrome!");
-      return true;
-    
-
-    
+    return true;
   }
-
-  
 }

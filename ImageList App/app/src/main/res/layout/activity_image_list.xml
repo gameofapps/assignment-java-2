@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Bikini Bottom's Finest"
+                android:text="@string/image_list_title"
                 android:textColor="#523e32"
                 android:textSize="32sp"
                 android:textStyle="bold"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:gravity="center"
-                android:text="Tap on a Character!"
+                android:text="@string/image_list_caption"
                 android:textColor="#000000"
                 android:textStyle="italic"
                 android:textSize="20sp"
@@ -47,15 +47,14 @@
                 android:layout_height="200dp"
                 android:onClick="showSpongebob"
                 android:paddingTop="10dp"
-                app:srcCompat="@drawable/spongebob"
-                android:contentDescription="TODO" />
+                app:srcCompat="@drawable/spongebob" />
 
             <TextView
                 android:id="@+id/spongebob_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Spongebob"
+                android:text="@string/spongebob_list"
                 android:textColor="#523e32"
                 android:textSize="24sp"
                 android:typeface="sans" />
@@ -73,7 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Patrick"
+                android:text="@string/patrick_list"
                 android:textColor="#523e32"
                 android:textSize="24sp"
                 android:typeface="sans" />
@@ -91,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Mr. Krabs"
+                android:text="@string/mr_krabs_list"
                 android:textColor="#523e32"
                 android:textSize="24sp"
                 android:typeface="sans" />

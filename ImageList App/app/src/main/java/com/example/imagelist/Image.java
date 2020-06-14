@@ -2,6 +2,7 @@ package com.example.imagelist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -34,7 +35,6 @@ public class Image extends AppCompatActivity {
                 break;
             default:
               break;
-
         }
     }
 }

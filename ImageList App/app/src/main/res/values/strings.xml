@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Image List</string>
+  <string name="app_name">Image List</string>
+  <string name="image_list_title">Bikini Bottom\'s Finest</string>
+  <string name="image_list_caption">Tap on a Character!</string>
+  <string name="spongebob_list">Spongebob</string>
+  <string name="patrick_list">Patrick</string>
+  <string name="mr_krabs_list">Mr. Krabs</string>
 </resources>
