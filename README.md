@@ -39,16 +39,15 @@ void findPairs(int[] testArray, int targetSum) {
 ```
 Here's the answer:
 ```java
-class Main {
+class Main{
   public static void main(String[] args){
     int[] testArray = {2, 4, 5, 1, 3, 5, 4};
     int targetSum = 6; 
     findPairs(testArray, targetSum);
   }
   
-  static void findPairs(int[] testArray, int targetSum) {
-    for(int i = 0; i < testArray.length; i++) {
-      //looping through every number that isn't i to see if there are any sums that equal 6
+  static void findPairs(int[] testArray, int targetSum){
+    for(int i = 0; i < testArray.length; i++){
       for(int j = i + 1; j < testArray.length; j++){
         if((testArray[i] + testArray[j]) == targetSum){
           System.out.println("(" + testArray[i] + ", " + testArray[j] + ")");
@@ -81,8 +80,8 @@ This is my answer:
 public class Main{ 
   static boolean isPalindrome(String testString){ 
     int i = 0, j = testString.length() - 1; 
-    while (i < j) { 
-        if (testString.charAt(i) != testString.charAt(j)){
+    while(i < j) { 
+        if(testString.charAt(i) != testString.charAt(j)){
           return false;
         }  
         i++; 
@@ -91,9 +90,9 @@ public class Main{
     return true; 
   } 
   public static void main(String[] args){ 
-    String testString = "racecar"; 
-    if (isPalindrome(testString)){
-      System.out.print(testString + " is a palindrome"); 
+   String testString = "racecar"; 
+   if(isPalindrome(testString)){
+     System.out.print(testString + " is a palindrome"); 
     }
     else{
       System.out.print(testString + " is not a palindrome"); 
