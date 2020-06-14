@@ -89,7 +89,8 @@ public class Main{
       } 
     return true; 
   } 
-  public static void main(String[] args){ 
+ 
+ public static void main(String[] args){ 
    String testString = "racecar"; 
    if(isPalindrome(testString)){
      System.out.print(testString + " is a palindrome"); 
