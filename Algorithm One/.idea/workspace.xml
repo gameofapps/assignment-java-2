@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d08d5d4a-5297-4aa5-9804-165912473237" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1d5bPtFZOQkaiy2kZWnEtxS3w0J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.FindPairsAlgorithm">
+    <configuration name="FindPairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FindPairs" />
+      <module name="Algorithm One" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindPairsAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FindPairsAlgorithm" />
+      <module name="Algorithm One" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FindPairsAlgorithm" />
+        <item itemvalue="Application.FindPairs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d08d5d4a-5297-4aa5-9804-165912473237" name="Default Changelist" comment="" />
+      <created>1591717880623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591717880623</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1591981252295">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1591981252295" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1591981252295">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1591981252295" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1591981252294">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1591981252294" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1591981252295">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1591981252295" />
+    <state x="114" y="52" key="new project wizard" timestamp="1591717967731">
+      <screen x="0" y="23" width="1440" height="813" />
+    </state>
+    <state x="114" y="52" key="new project wizard/0.23.1440.813@0.23.1440.813" timestamp="1591717967731" />
+  </component>
+</project>
