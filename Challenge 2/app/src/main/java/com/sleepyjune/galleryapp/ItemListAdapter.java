@@ -1,10 +1,7 @@
-package com.sleepyjune.galleryapp.pokemon;
+package com.sleepyjune.galleryapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,15 +11,11 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.sleepyjune.galleryapp.ItemDetailActivity;
-import com.sleepyjune.galleryapp.ItemDetailFragment;
-import com.sleepyjune.galleryapp.ItemListActivity;
-import com.sleepyjune.galleryapp.R;
+import com.sleepyjune.galleryapp.pokemon.Pokemon;
 
-import java.io.InputStream;
 import java.util.List;
 
-public class PokemonListAdapter extends RecyclerView.Adapter<PokemonListAdapter.ViewHolder> {
+public class ItemListAdapter extends RecyclerView.Adapter<ItemListAdapter.ViewHolder> {
 
     private final ItemListActivity mParentActivity;
     private final List<Pokemon> mValues;
@@ -49,29 +42,27 @@ public class PokemonListAdapter extends RecyclerView.Adapter<PokemonListAdapter.
         }
     };
 
-    public PokemonListAdapter(ItemListActivity parent,
-                              List<Pokemon> items,
-                              boolean twoPane) {
+    public ItemListAdapter(ItemListActivity parent,
+                           List<Pokemon> items,
+                           boolean twoPane) {
         mValues = items;
         mParentActivity = parent;
         mTwoPane = twoPane;
     }
 
     @Override
-    public PokemonListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ItemListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_list_content, parent, false);
-        return new PokemonListAdapter.ViewHolder(view);
+        return new ItemListAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(final PokemonListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(final ItemListAdapter.ViewHolder holder, int position) {
         Pokemon pokemon = mValues.get(position);
 
         holder.mIdView.setText(String.valueOf(pokemon.index));
         holder.mContentView.setText(pokemon.name);
-
-        //holder.mImageView.setImageResource(R.drawable.test_pikachu);
 
         if(pokemon.bitmap != null){
             holder.mImageView.setImageBitmap(pokemon.bitmap);

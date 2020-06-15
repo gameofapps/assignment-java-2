@@ -1,25 +1,17 @@
 package com.sleepyjune.galleryapp;
 
-import android.content.Context;
-import android.content.Intent;
 import android.content.res.AssetManager;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.nfc.Tag;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.widget.Toolbar;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import android.view.View;
 import com.sleepyjune.galleryapp.pokemon.Pokemon;
 import com.sleepyjune.galleryapp.pokemon.PokemonList;
-import com.sleepyjune.galleryapp.pokemon.PokemonListAdapter;
+
 import java.io.InputStream;
 import org.simpleframework.xml.Serializer;
 import org.simpleframework.xml.core.Persister;
@@ -38,20 +30,8 @@ public class ItemListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
 
-
-        //PokemonList
-//        Pokemon pikachu = new Pokemon(1, "Pikachu", "bleh");
-//
-//        ArrayList<Pokemon> pokemonArrayList = new ArrayList<Pokemon>();
-//        pokemonArrayList.add(pikachu);
-
         DeserializeXMLData();
         LoadBitmaps(getAssets());
-
-
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        toolbar.setTitle(getTitle());
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
@@ -100,6 +80,6 @@ public class ItemListActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new PokemonListAdapter(this, PokemonList.pokemons, mTwoPane));
+        recyclerView.setAdapter(new ItemListAdapter(this, PokemonList.pokemons, mTwoPane));
     }
 }
