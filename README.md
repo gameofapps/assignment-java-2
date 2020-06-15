@@ -81,19 +81,19 @@ public class Main {
   static boolean isPalindrome(String testString) { 
     int i = 0, j = testString.length() - 1; 
     while(i < j) { 
-        if(testString.charAt(i) != testString.charAt(j)) {
-          return false;
-        }  
-        i++; 
-        j--; 
-      } 
+      if(testString.charAt(i) != testString.charAt(j)) {
+        return false;
+      }  
+      i++; 
+      j--; 
+    } 
     return true; 
   } 
  
- public static void main(String[] args) { 
-   String testString = "racecar"; 
-   if(isPalindrome(testString)) {
-     System.out.print(testString + " is a palindrome"); 
+  public static void main(String[] args) { 
+    String testString = "racecar"; 
+    if(isPalindrome(testString)) {
+      System.out.print(testString + " is a palindrome"); 
     }
     else {
       System.out.print(testString + " is not a palindrome"); 
