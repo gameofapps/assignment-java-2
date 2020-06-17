@@ -1,0 +1,9 @@
+# IntelliJ IDEA files
+.idea/
+
+# Compiled/Output
+out/
+*.class
+
+# Crash logs
+hs_err_pid*
