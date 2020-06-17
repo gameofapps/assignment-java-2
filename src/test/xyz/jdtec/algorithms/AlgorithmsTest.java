@@ -55,8 +55,8 @@ class AlgorithmsTest {
     @Test
     void findPairsTestRepeats() {
         // Check for repeats
-        Algorithms.findPairs(new int[] {-2, 8, -2, 8, -2, 8, -2, 8}, 6);
-        assertEquals("(8, -2)" + lf, outStream.toString());
+        Algorithms.findPairs(new int[] {3, 3, 3, 3, 3, 3}, 6);
+        assertEquals("(3, 3)" + lf, outStream.toString());
     }
 
     @Test
