@@ -6,15 +6,26 @@ public class Image {
     private int id;
     private String caption;
 
+    /**
+     * Image class constructor
+     *
+     * @param id Android resource ID for the image
+     * @param caption caption text for the image
+     */
     Image(int id, String caption) {
         this.id = id;
         this.caption = caption;
     }
 
-    // Method for creating dummy assignments (returns as ArrayList)
+    /**
+     * Method for creating "dummy" images
+     *
+     * @return ArrayList of Image objects containing some images and their captions
+     */
     public static ArrayList<Image> createDummyImages() {
         ArrayList<Image> images = new ArrayList<>();
 
+        // Returns some images from drawable as well their respective captions
         images.add(new Image(R.drawable.sun, "Sun"));
         images.add(new Image(R.drawable.mercury, "Mercury"));
         images.add(new Image(R.drawable.venus, "Venus"));
@@ -29,6 +40,7 @@ public class Image {
     }
 
     // --- Getters ---
+
     public int getId() {
         return id;
     }
