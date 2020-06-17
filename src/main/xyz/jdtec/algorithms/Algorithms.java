@@ -21,10 +21,7 @@ public class Algorithms {
 
         // Loop through all the elements of input array
         for (int num : testArray) {
-            // Instead of checking a + b = c, check c - a = b;
-            // ...where: a = num
-            //           b = checkNum
-            //           c = targetSum
+            // Instead of checking a + b = c, check c - a = b; ...where: a = num, b = checkNum, c = targetSum
             int checkNum = targetSum - num;
 
             if (!workingList.contains(checkNum)) {
@@ -33,15 +30,14 @@ public class Algorithms {
             }
             else {
                 // Complement of current number (b) was found! Therefore, we must've found a pair; add to pairs Set
-                pairs.add(Arrays.asList(num, checkNum));    // Note: I went through the trouble of storing the pairs
-                                                            //       as a List rather than as a pre-formatted String
-                                                            //       because later on, if we need to use the data in
-                                                            //       some other way, it's easy to do so.
+                pairs.add(Arrays.asList(num, checkNum));
             }
         }
 
         // Run through the Set of pairs and print to stdout according to requested format
         for (List<Integer> pair : pairs) {
+            // Note: I went through the trouble of storing the pairs as a List rather than as a pre-formatted String
+            //       because later on, if we need to use the data in some other way, it's easy to do so.
             System.out.println(String.format("(%d, %d)", pair.get(0), pair.get(1)));
         }
     }
