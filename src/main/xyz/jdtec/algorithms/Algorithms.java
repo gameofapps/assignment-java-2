@@ -3,7 +3,13 @@ package xyz.jdtec.algorithms;
 import java.util.*;
 
 public class Algorithms {
-    // Question 1: Find all pairs for a given sum
+    /**
+     * Question 1: Find all pairs for a given sum
+     * Prints any pairs found with format: (number, number) \n ...
+     *
+     * @param testArray integer array to check for pairs
+     * @param targetSum integer sum to check against
+     */
     public static void findPairs(int[] testArray, int targetSum) {
         // If array length < 2, we can't do anything
         if (testArray.length < 2) {
@@ -40,7 +46,12 @@ public class Algorithms {
         }
     }
 
-    // Question 2: Is Palindrome
+    /**
+     * Question 2: Is Palindrome
+     *
+     * @param testString String to check for palindromic status
+     * @return whether String is a palindrome
+     */
     public static boolean isPalindrome(String testString) {
         // Make sure string is lowercase as "Radar" != "radar"!
         testString = testString.toLowerCase();
