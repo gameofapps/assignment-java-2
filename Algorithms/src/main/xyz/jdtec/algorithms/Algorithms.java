@@ -5,7 +5,12 @@ import java.util.*;
 public class Algorithms {
     /**
      * Question 1: Find all pairs for a given sum
-     * Prints any pairs found with format: (number, number) \n ...
+     * Prints any pairs found with format: "(number, number)", separated by new lines.
+     *
+     * This implementation has an O(n) time complexity (linear time) as it only traverses the input array once (rather
+     * than nested loops). As far as I'm aware, this is the fastest possible implementation. For context, brute-force
+     * takes O(n^2) (polynomial time), which is horrible. Alternatively, the sort + pointers method is bit better, but
+     * it requires sorting, which I believe is O(n log n) best-case.
      *
      * @param testArray integer array to check for pairs
      * @param targetSum integer sum to check against
@@ -44,6 +49,10 @@ public class Algorithms {
 
     /**
      * Question 2: Is Palindrome
+     * Tells you whether a given String is a palindrome!
+     *
+     * This implementation uses the existing (and well designed, I assume) StringBuilder.reverse() method provided by
+     * Java standard library. It has a time complexity of O(n), should be fastest possible.
      *
      * @param testString String to check for palindromic status
      * @return whether String is a palindrome

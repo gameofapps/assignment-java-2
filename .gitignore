@@ -1,5 +1,6 @@
 # IntelliJ IDEA files
 .idea/
+*.iml
 
 # Compiled/Output
 out/
@@ -7,3 +8,6 @@ out/
 
 # Crash logs
 hs_err_pid*
+
+# Windows
+Thumbs.db
