@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ImageViewer</string>
     <string name="detail_activity_name">Image Details</string>
+    <string name="info_button_title">More info</string>
 </resources>
