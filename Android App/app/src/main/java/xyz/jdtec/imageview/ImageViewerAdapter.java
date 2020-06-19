@@ -73,7 +73,7 @@ public class ImageViewerAdapter extends RecyclerView.Adapter<ImageViewerAdapter.
             public void onClick(View view) {
                 // Grab a context and create an intent
                 Context context = view.getContext();
-                Intent intent = new Intent(context, PopupActivity.class);
+                Intent intent = new Intent(context, ImageDetailActivity.class);
 
                 // Pass along the image resource ID, caption, and description
                 intent.putExtra("image", image.getId());

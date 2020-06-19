@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <!-- Main activity -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +18,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".PopupActivity" />
+        <!-- Image Detail activity — Child of Main activity -->
+        <activity
+            android:name=".ImageDetailActivity"
+            android:label="@string/detail_activity_name"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>
