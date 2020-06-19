@@ -18,9 +18,11 @@ public class PopupActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int imageResId = intent.getIntExtra("image", 0);
         String imageCaption = intent.getStringExtra("caption");
+        String imageDescription = intent.getStringExtra("description");
 
         // Set the image and caption text to the values obtained above
         ((ImageView) findViewById(R.id.expandedImage)).setImageResource(imageResId);
         ((TextView) findViewById(R.id.expandedCaption)).setText(imageCaption);
+        ((TextView) findViewById(R.id.expandedDescription)).setText(imageDescription);
     }
 }
