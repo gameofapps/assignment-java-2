@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Using Android default implementation, but there's also "back" button on menu -->
+
+    <!-- Info button -->
+    <item
+        android:id="@+id/infoButton"
+        android:icon="@drawable/ic_menu_info"
+        android:color="@color/colorText"
+        android:title="@string/info_button_title"
+        app:showAsAction="ifRoom" />
+
+</menu>
