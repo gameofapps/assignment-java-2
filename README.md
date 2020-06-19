@@ -68,7 +68,7 @@
 > - It should show a list of images.
 > - Tapping on an image should navigate to a new screen that shows the selected picture
 
-**See app solution at: [Android App](./Android%20App/app/src/main)**
+**See app solution at: [Android App](./Android%20App/app/src/main) — "ImageViewer"**
 
 ---
 
@@ -76,3 +76,7 @@
 > 
 > - A good developer tries to write code that is easy to understand. The industry has a set of best practices that focus on writing easy to maintain code. Here's a set of guidelines on these best practices: [Java Style Guide](https://github.com/raywenderlich/java-style-guide).
 > 
+
+---
+
+*All code within this repo is licensed under the [MIT license](https://opensource.org/licenses/MIT)*
