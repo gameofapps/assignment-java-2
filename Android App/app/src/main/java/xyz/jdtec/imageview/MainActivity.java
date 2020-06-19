@@ -4,15 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,11 +43,13 @@ public class MainActivity extends AppCompatActivity {
         // If the info button is the one that is clicked...
         if (itemId == R.id.infoButton) {
             // Create an intent
+            // Note: this "about" page reuses the ImageDetail page, so extra layout is not needed!
             Intent intent = new Intent(this, ImageDetailActivity.class);
 
             // Pass along the my info
             intent.putExtra("image", R.drawable.j_logo);
             intent.putExtra("caption", "ImageViewer: created with ❤️ by Joe Dai.");
+            intent.putExtra("description", "This app is published under the MIT license.\n\nThe solar system images contained within this app is obtained from NASA for non-commercial use. All image copyrights go to their respective owners.");
             intent.putExtra("infoUrl", "https://jdtec.xyz/");
 
             this.startActivity(intent);  // start activity!

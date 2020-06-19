@@ -32,6 +32,11 @@ public class ImageDetailActivity extends AppCompatActivity {
         ((ImageView) findViewById(R.id.expandedImage)).setImageResource(imageResId);
         ((TextView) findViewById(R.id.expandedCaption)).setText(imageCaption);
         ((TextView) findViewById(R.id.expandedDescription)).setText(imageDescription);
+
+        // If it's the page with my logo on it, must be about page: set title accordingly
+        if (imageResId == R.drawable.j_logo) {
+            setTitle(R.string.about_page_name);
+        }
     }
 
     // --- Action Bar Menu --- //
@@ -46,6 +51,12 @@ public class ImageDetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemId = item.getItemId();  // grab menu item ID
+
+        // Change the animation for "back" button
+        if (itemId == android.R.id.home) {
+            finish();
+            overridePendingTransition(0, android.R.anim.slide_out_right);
+        }
 
         // If the info button is the one that is clicked...
         if (itemId == R.id.infoButton) {

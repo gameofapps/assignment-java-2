@@ -7,6 +7,7 @@
     android:background="@color/colorBackground"
     tools:context=".MainActivity">
 
+    <!-- Main image viewing RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/imageViewer"
         android:layout_width="match_parent"
